@@ -7,6 +7,9 @@ GuideTest::GuideTest()
 	bg->setAnchorPoint(ccp(0, 0));
 	this->addChild(bg);
 
+	CCSprite* spt = CCSprite::create();
+	this->addChild(spt);
+
 	CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
 	//第一个参数是颜色ccc4(r,g,b,a) a取值(0~255),越大越不透明 下面两个参数为宽高,不传默认为屏幕大小
 	
@@ -18,7 +21,7 @@ GuideTest::GuideTest()
 	float posX = visibleSize.width / 2;
 	float posY = visibleSize.height / 2;
 
-	Guide::init(this, stageWidth, stageHeight, bgColor);
+	Guide::init(spt, stageWidth, stageHeight, bgColor);
 
 	Guide::createGuide(width, height, posX, posY);
 
@@ -27,7 +30,14 @@ GuideTest::GuideTest()
 
 	//Guide::createGuide(130, posX, posY);
 
-	//Guide::move(posX, posY);
+	Guide::move(posX, posY);
+
+	//Guide::clear();
+
+	//spt->removeFromParent();
+	//spt = NULL;
+
+	CCLOG("isShowing %d", Guide::isShowing());
 }
 
 

@@ -9,6 +9,12 @@ static CCClippingNode* clipNode = NULL;
 static CCLayerColor* pLayer = NULL;
 //绘制镂空的节点
 static CCDrawNode *drawNode = NULL;
+//舞台宽度
+static float m_stageWidth = 960;
+//舞台高度
+static float m_stageHeight = 640;
+//背景颜色
+static ccColor4B m_bgColor = ccc4(0, 0, 0, 200);
 class Guide
 {
 public:
@@ -45,7 +51,16 @@ public:
 	//************************************
 	void static createGuide(float radius, float posX, float posY);
 
-	
+	//移动新手	
 	void static move(float posX, float posY);
+
+	//清除新手
+	void static clear();
+
+	//新手引导是否正在显示中
+	bool static isShowing();
+
+private:
+	void static create();
 };
 #endif
