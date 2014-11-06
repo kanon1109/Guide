@@ -7,9 +7,6 @@
     <Filter Include="Classes">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\vo">
-      <UniqueIdentifier>{dbee398b-4a04-479e-a808-5690cb7a1726}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -24,9 +21,6 @@
     <ClCompile Include="..\Classes\Guide.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\GuideVo.cpp">
-      <Filter>Classes\vo</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -40,9 +34,6 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Guide.h">
       <Filter>Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\vo\GuideVo.h">
-      <Filter>Classes\vo</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

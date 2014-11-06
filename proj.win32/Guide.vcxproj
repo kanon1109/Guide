@@ -131,7 +131,6 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\GuideVo.cpp" />
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\Guide.cpp" />
     <ClCompile Include="..\Classes\GuideTest.cpp" />
@@ -141,7 +140,6 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\Guide.h" />
     <ClInclude Include="..\Classes\GuideTest.h" />
-    <ClInclude Include="..\Classes\vo\GuideVo.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
